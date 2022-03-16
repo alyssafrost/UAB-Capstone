@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css"; // Import all of the Routers, switches, routes, redirects here.
 
 function App() {
   return (
