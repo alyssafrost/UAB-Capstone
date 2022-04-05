@@ -2,7 +2,7 @@
 
 There are givens for this project, such as the schedule for the family, events on a week day versus the events on the weekends, and events that overlap with everyday regardless of week day or weekend.
 
-**Everyday events (Monday - Sunday)**
+### **Everyday events (Monday - Sunday)**
 
 | Event                           | Day     | Time     |
 | ------------------------------- | ------- | -------- |
@@ -14,11 +14,33 @@ There are givens for this project, such as the schedule for the family, events o
 | Adults go to bed                | Mon-Sun | 10:30 PM |
 | Children go to bed              | Mon-Sun | 8:00 PM  |
 
-**Monday - Friday events**
+
+---
+### **Events: Monday - Friday**
 
 | Event | Day     | Time |
 | ----- | ------- | ---- |
-|       | Mon-Fri | AM   |
-|       | Mon-Fri | AM   |
-|       | Mon-Fri | AM   |
-|       | Mon-Fri | AM   |
+| Door events (x16 per day) | Mon-Fri |  Any |
+| Microwaving (20 mins per day)      | Mon-Fri | Any  |
+| Oven (45 mins per day)      | Mon-Fri | Any   |
+| Televison on (Living room; 4 hours per day)     | Mon-Fri | Any   |
+| Televison on (Bedroom; 2 hours per day)       | Mon-Fri | Any   |
+| Shower (2 per day)     | Mon-Fri | Any   |
+| Bath (2 per day)     | Mon-Fri | Any   |
+| Stove (15 min per day)     | Mon-Fri | Any   |
+
+
+---
+### **Events: Saturday - Sunday**
+
+| Event | Day     | Time |
+| ----- | ------- | ---- |
+|  Door events (x32) | Sat-Sun | Any  |
+| Microwaving (30 mins per day)      | Sat-Sun | Any   |
+| Oven (60 mins per day)     | Sat-Sun | Any  |
+| Televison on (Living room; 8 hours per day)      | Sat-Sun | Any   |
+| Televison on (Bedroom; 4 hours per day)      | Sat-Sun | Any   |
+| Showers (3 per day)     | Sat-Sun | Any   |
+| Baths (3 per day)      | Sat-Sun | Any   |
+|       | Sat-Sun | Any   |
+|       | Sat-Sun | Any   |
