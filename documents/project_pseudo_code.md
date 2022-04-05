@@ -1,6 +1,8 @@
 # Project Pesudocode
 
-There are givens for this project, such as the schedule for the family, events on a week day versus the events on the weekends, and events that overlap with everyday regardless of week day or weekend.
+There are givens for this project, such as the schedule for the family, events on a week day versus the events on the weekends, and events that overlap everyday regardless of week day or weekend.
+
+Below are the tables of data that correspond to each event, day, time, or amount in which the generated events occur, headed by event time lines.
 
 ### **Everyday events (Monday - Sunday)**
 
