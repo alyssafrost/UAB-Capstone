@@ -1,8 +1,12 @@
-# Project Pesudocode
+# Project Pseudocode
 
-There are givens for this project, such as the schedule for the family, events on a week day versus the events on the weekends, and events that overlap everyday regardless of week day or weekend.
+1. Family Data & Usage Time Schedule
+2. Event Generation Based on Time Schedule 
+3. Utility Usage and Temperature Calculation 
 
-Below are the tables of data that correspond to each event, day, time, or amount in which the generated events occur, headed by event time lines.
+There are givens for this project, such as the schedule for the family, events on a week day versus the events on the weekends, and events that overlap everyday regardless of week day or weekend. [See here for "Family Schedule" requirements.](project_requirements.pdf)
+
+Below are the tables of data that correspond to each event, day, time, or amount in which the generated events occur, headed by event-time schedules.
 
 ### **Everyday events (Monday - Sunday)**
 
