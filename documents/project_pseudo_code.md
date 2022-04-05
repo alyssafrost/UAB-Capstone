@@ -28,6 +28,10 @@ There are givens for this project, such as the schedule for the family, events o
 | Shower (2 per day)     | Mon-Fri | Any   |
 | Bath (2 per day)     | Mon-Fri | Any   |
 | Stove (15 min per day)     | Mon-Fri | Any   |
+| Dishwasher (x4 a week)    | Mon-Fri | Any   |
+| Clothes Washer (x4 a week)     | Mon-Fri | Any   |
+| Clothes Dryer (x4 a week)     | Mon-Fri | Any   |
+
 
 
 ---
@@ -42,5 +46,4 @@ There are givens for this project, such as the schedule for the family, events o
 | Televison on (Bedroom; 4 hours per day)      | Sat-Sun | Any   |
 | Showers (3 per day)     | Sat-Sun | Any   |
 | Baths (3 per day)      | Sat-Sun | Any   |
-|       | Sat-Sun | Any   |
-|       | Sat-Sun | Any   |
+| Stove (30 min a day)      | Sat-Sun | Any   |
