@@ -26,10 +26,10 @@ const MenuBar = () => (
   >
     <TabPane
       tab={
-        <span>
+        <div>
           <HomeOutlined />
           Floorplan
-        </span>
+        </div>
       }
       key="1"
     >
@@ -38,10 +38,10 @@ const MenuBar = () => (
     </TabPane>
     <TabPane
       tab={
-        <span>
+        <div>
           <LineChartOutlined />
           Usage History
-        </span>
+        </div>
       }
       key="2"
     >
@@ -49,10 +49,10 @@ const MenuBar = () => (
     </TabPane>
     {/* <TabPane
       tab={
-        <span>
+        <div>
           <SettingOutlined />
           Dev Tools
-        </span>
+        </div>
       }
       key="3"
     >
