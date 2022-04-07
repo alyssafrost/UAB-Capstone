@@ -16,60 +16,48 @@ import {
 
 const data = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
+    name: "Month 1",
+    water_usage: 4000,
+    electricity_usage: 2400,
     amt: 2400,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: "Month 2",
+    water_usage: 3000,
+    electricity_usage: 1398,
+    amt: 3210,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
+    name: "Month 3",
+    water_usage: 2000,
+    electricity_usage: 9800,
     amt: 2290,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
+    name: "Month 4",
+    water_usage: 2780,
+    electricity_usage: 3908,
     amt: 2000,
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
+    name: "Month 5",
+    water_usage: 1890,
+    electricity_usage: 4800,
     amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
   },
 ];
 
 const AnalysisScreen = () => {
   return (
     <LineChart
-      width={500}
-      height={300}
+      width={800}
+      height={500}
       data={data}
       margin={{
         top: 5,
         right: 30,
         left: 20,
-        bottom: 5,
+        bottom: 2,
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
@@ -79,11 +67,12 @@ const AnalysisScreen = () => {
       <Legend />
       <Line
         type="monotone"
-        dataKey="pv"
+        dataKey="water_usage"
+        // change the dataKey to reflect the label rather than be settled with each datapoint
         stroke="#8884d8"
         activeDot={{ r: 8 }}
       />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="electricity_usage" stroke="#82ca9d" />
     </LineChart>
   );
 };
