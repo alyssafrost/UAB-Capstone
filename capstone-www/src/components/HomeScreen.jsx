@@ -12,8 +12,9 @@ const TemperatureBox = () => {
   return <Card title="Temperature Control">test</Card>;
 };
 
-{
-  array.map((TemperatureBox) => <li>{TemperatureBox.id}</li>);
-}
+// // not sure if this is an indexable thing to div page?
+// {
+//   array.map((TemperatureBox) => <li>{TemperatureBox.id}</li>);
+// }
 
 export { HomeScreen, TemperatureBox };

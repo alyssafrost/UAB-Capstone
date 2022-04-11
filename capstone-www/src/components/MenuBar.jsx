@@ -1,9 +1,9 @@
 import React from "react";
 import { Tabs } from "antd";
 import {
-  HomeOutlined,
-  LineChartOutlined,
-  SettingOutlined,
+  HomeOutlined, // Home screen icon
+  LineChartOutlined, // Graph screen Icon
+  SlidersOutlined, // Control screen Icon
 } from "@ant-design/icons";
 
 // Local
@@ -48,18 +48,18 @@ const MenuBar = () => (
     >
       <AnalysisScreen />
     </TabPane>
-    {/* <TabPane
+    <TabPane
       tab={
         <div>
-          <SettingOutlined />
-          Dev Tools
+          <SlidersOutlined />
+          Control Panel
         </div>
       }
       key="3"
     >
       {" "}
       <ControlScreen />
-    </TabPane> */}
+    </TabPane>
   </Tabs>
 );
 
