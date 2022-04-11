@@ -7,7 +7,7 @@ import {
 } from "@ant-design/icons";
 
 // Local
-import { HomeScreen } from "./HomeScreen";
+import { HomeScreen, TemperatureBox } from "./HomeScreen";
 import { AnalysisScreen } from "./AnalysisScreen";
 import { ControlScreen } from "./ControlScreen";
 
@@ -35,6 +35,7 @@ const MenuBar = () => (
     >
       {" "}
       <HomeScreen />
+      <TemperatureBox />
     </TabPane>
     <TabPane
       tab={
