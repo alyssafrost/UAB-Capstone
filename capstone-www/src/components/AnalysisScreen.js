@@ -19,30 +19,35 @@ const data = [
     name: "Month 1",
     water_usage: 4000,
     electricity_usage: 2400,
+    total_cost: 1500,
     amt: 2400,
   },
   {
     name: "Month 2",
     water_usage: 3000,
     electricity_usage: 1398,
+    total_cost: 3000,
     amt: 3210,
   },
   {
     name: "Month 3",
     water_usage: 2000,
     electricity_usage: 9800,
+    total_cost: 1300,
     amt: 2290,
   },
   {
     name: "Month 4",
     water_usage: 2780,
     electricity_usage: 3908,
+    total_cost: 2000,
     amt: 2000,
   },
   {
     name: "Month 5",
     water_usage: 1890,
     electricity_usage: 4800,
+    total_cost: 1900,
     amt: 2181,
   },
 ];
@@ -73,6 +78,7 @@ const AnalysisScreen = () => {
         activeDot={{ r: 8 }}
       />
       <Line type="monotone" dataKey="electricity_usage" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="total_cost" stroke="#82ca9d" />
     </LineChart>
   );
 };
