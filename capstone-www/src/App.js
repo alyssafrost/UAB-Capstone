@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css"; // Import all of the Routers, switches, routes, redirects here.
 // import Button from "react-bootstrap/Button";
 
