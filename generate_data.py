@@ -8,9 +8,8 @@ from meteostat import Point, Daily
 # Point location for Birmingham
 location = Point(33.543682, -86.779633)
 
+pass
 
-
-# TODO
 
 
 def main () -> None:
