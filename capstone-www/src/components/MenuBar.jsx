@@ -5,6 +5,8 @@ import {
   LineChartOutlined, // Graph screen Icon
   SlidersOutlined, // Control screen Icon
 } from "@ant-design/icons";
+import { Space } from "antd";
+import { Divider } from "antd";
 
 // Local
 import { HomeScreen, TemperatureBox } from "./HomeScreen";
@@ -27,21 +29,24 @@ const MenuBar = () => (
     <TabPane
       tab={
         <div>
-          <HomeOutlined />
-          Floorplan
+          <HomeOutlined /> Home Screen
         </div>
       }
       key="1"
     >
       {" "}
       <HomeScreen />
-      <TemperatureBox />
+      <gridLayout>
+        <Divider orientation="vertical">
+          {" "}
+          <TemperatureBox></TemperatureBox>
+        </Divider>{" "}
+      </gridLayout>
     </TabPane>
     <TabPane
       tab={
         <div>
-          <LineChartOutlined />
-          Usage History
+          <LineChartOutlined /> Usage History
         </div>
       }
       key="2"
@@ -51,8 +56,7 @@ const MenuBar = () => (
     <TabPane
       tab={
         <div>
-          <SlidersOutlined />
-          Control Panel
+          <SlidersOutlined /> Control Panel
         </div>
       }
       key="3"
