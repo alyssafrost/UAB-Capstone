@@ -1,6 +1,7 @@
 // https://codesandbox.io/s/kec3v?file=/src/App.tsx
 
 // TODO:Populate with real data
+// TODO: Also use a calendar component? Not sure.
 
 import React from "react";
 
