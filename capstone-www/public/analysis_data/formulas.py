@@ -1,4 +1,26 @@
-## Math formulas for our temperature conversions.
+# Math formulas for our temperature conversions.
+### Heat loss for closed doors/windows: Q = U*A*deltaT
+# Advised U-value for windows in AL = 0.30
+# Average window size is 2ft x 3ft (LxW) A = 6 sq. ft
+# U-value for Opaque doors <= 0.17
+# Average Exterior Door size is 6.67ft x 3ft (HxW) A = 20.01 sq. ft
+
+### Heat Loss Formulas
+# Q = A*v*p*TD*hrs
+# Q - Daily heat loss in BTU
+# A - area of door/window
+# v - wind speed in ft^3/min
+# p - air density
+# TD - difference of internal and external temperature in Fairenheight
+# hrs - daily hours door/window is open
+# 
+# Convert Q from BTU to kWh: Q * (2.931x10^-4)
+# Cost = kWh * (cost per kWh)
+#
+# Heat loss upon door opening:
+# Q = (6.67 * 3) * v * (1.3) * (internalT - externalT) 
+# 
+
 
 def closedTemp(external, internal):
     '''
