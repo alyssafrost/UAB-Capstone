@@ -17,12 +17,14 @@ import {
 import { AnalysisScreen } from "./AnalysisScreen";
 import { ControlScreen } from "./ControlScreen";
 
+// Creates TabPanes for modules/screens
 const { TabPane } = Tabs;
 
 function callback(key) {
   console.log(key);
 }
 
+// Main Menu bar function
 const MenuBar = () => (
   <Tabs
     defaultActiveKey="1"
