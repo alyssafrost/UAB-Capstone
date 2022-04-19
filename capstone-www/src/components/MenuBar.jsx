@@ -34,7 +34,8 @@ const MenuBar = () => (
     <TabPane
       tab={
         <span>
-          <HomeOutlined /> Home Screen
+          <HomeOutlined style={{ fontSize: "30px" }} />
+          <h style={{ fontSize: "20px" }}> Home Screen </h>
         </span>
       }
       key="1"
@@ -52,7 +53,8 @@ const MenuBar = () => (
     <TabPane
       tab={
         <span>
-          <LineChartOutlined /> Usage History
+          <LineChartOutlined style={{ fontSize: "30px" }} />{" "}
+          <h style={{ fontSize: "20px" }}> Usage History </h>
         </span>
       }
       key="2"
@@ -62,7 +64,8 @@ const MenuBar = () => (
     <TabPane
       tab={
         <span>
-          <SlidersOutlined /> Control Panel
+          <SlidersOutlined style={{ fontSize: "30px" }} />{" "}
+          <h style={{ fontSize: "20px" }}> Control Panel </h>
         </span>
       }
       key="3"
