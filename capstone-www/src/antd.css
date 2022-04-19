@@ -1,0 +1,7 @@
+@import "~antd/dist/antd.css";
+
+.ant-menu {
+  background: none !important;
+}
+
+
