@@ -55,24 +55,6 @@ bham = Point(33.5667, -86.75, 196)
 # prints windspeed on given day
 # print(marchDaily.at['2022-03-02','wspd'])
 
-def closedTemp(internal):
-    '''
-    Calculates temp rise/drop when no doors or windows are open. Checks every hour
-    external: temp outside of house at given time
-    internal: temp inside of house at given time
-    tChange: calculated change in interior temp
-    '''
-    # 3600 seconds = 60 min
-    # temp should rise/drop 2 degrees for every +/- 10 deg difference in external and internal temp with no windows or doors open
-    today = datetime.today()
-    currDay = Hourly(bham, today - timedelta(hours = 1), today) # read past hour of data
-    currDay = currDay.fetch()
-    external = currDay.at[today.strftime("%Y-%m-%d"), 'temp']
-    tChange = 2*((external - internal) / 10)
-    internal += tChange # New internal temp is previous internal temp +/- change in temp
-
-    return internal
-
 
 def doorEnergy(internal):
     '''
@@ -121,6 +103,25 @@ def windowEnergy(internal):
     cost = kwh*0.12 # 12 cents per kwh
 
     return cost
+
+
+def closedTemp(internal):
+    '''
+    Calculates temp rise/drop when no doors or windows are open. Checks every hour
+    external: temp outside of house at given time
+    internal: temp inside of house at given time
+    tChange: calculated change in interior temp
+    '''
+    # 3600 seconds = 60 min
+    # temp should rise/drop 2 degrees for every +/- 10 deg difference in external and internal temp with no windows or doors open
+    today = datetime.today()
+    currDay = Hourly(bham, today - timedelta(hours = 1), today) # read past hour of data
+    currDay = currDay.fetch()
+    external = currDay.at[today.strftime("%Y-%m-%d"), 'temp']
+    tChange = 2*((external - internal) / 10)
+    internal += tChange # New internal temp is previous internal temp +/- change in temp
+
+    return internal
 
 def doorTemp(internal):
     '''
