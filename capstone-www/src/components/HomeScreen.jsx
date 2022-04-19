@@ -13,7 +13,7 @@ export const HomeScreen = () => {
   return <img src={require("../imgs/FloorPlan.jpg")} alt=""></img>;
 };
 
-//put these in ghost buttons
+// create onClick for temperature state
 export const TemperatureBox = () => {
   return (
     <Card title="Temperature Control">
@@ -38,7 +38,6 @@ export const TemperatureBox = () => {
 export const IntExtTemp = () => {
   return (
     <Card title="Real-time Temperature">
-      {/* <h align="top"> YES </h> */}
       <Space direction="vertical">
         <p style={{ fontSize: "23px" }} align="center">
           Internal: <p style={{ fontSize: "27px" }}> 76° </p>
