@@ -1,43 +1,65 @@
+// React, antd
 import React from "react";
 import { Card } from "antd";
-import { Grid } from "antd";
-import { Row, Col } from "antd";
+import { Space } from "antd";
+import { UpOutlined, DownOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 
-// import Floorplan from "./Floorplan"; // include the floorplan
-// import Thermostat from "./Thermostat"; // include the thermostat
+//Local
+import "../antd.css";
+import { ApplianceToggle } from "./ControlScreen";
 
-// Probably remove Grid, contextualize to just rely on divisor placement.
-const gridLayout = () => {
-  return (
-    <Row>
-      <Col span={24}> </Col>
-      <Col span={12}>col-12</Col>
-      <Col span={8}>col-8</Col>
-    </Row>
-  );
-};
-
-const HomeScreen = () => {
+// Local exports
+export const HomeScreen = () => {
   return <img src={require("../imgs/FloorPlan.jpg")} alt=""></img>;
 };
 
-const TemperatureBox = () => {
-  return <Card title="Temperature Control"></Card>;
+// create onClick for temperature state
+export const TemperatureBox = () => {
+  return (
+    <Card title="Temperature Control">
+      <span className="site-button-ghost-wrapper-up" align="left">
+        <Button type="primary" ghost size="large">
+          <UpOutlined style={{ fontSize: "34px" }} align="left" />
+        </Button>
+      </span>
+      <Space>
+        <Space></Space>
+        <span className="site-button-ghost-wrapper-down" align="right">
+          <Button type="primary" ghost size="large">
+            <DownOutlined style={{ fontSize: "34px" }} align="right" />
+          </Button>
+        </span>
+      </Space>
+      <p style={{ fontSize: "34px" }}> 76° </p>
+    </Card>
+  );
 };
 
-const intExtTemp = () => {
-  return <Card title="Real Time temperature">test</Card>;
+export const IntExtTemp = () => {
+  return (
+    <Card title="Real-time Temperature">
+      <Space direction="vertical">
+        <p style={{ fontSize: "23px" }} align="center">
+          Internal: <p style={{ fontSize: "27px" }}> 76° </p>
+        </p>
+        <p style={{ fontSize: "23px" }} align="center">
+          External: <p style={{ fontSize: "27px" }}> 85° </p>
+        </p>
+      </Space>
+    </Card>
+  );
 };
 
-const generalLighting = () => {
-  return <Card title="Light Control">test</Card>;
-};
-
-export {
-  gridLayout,
-  HomeScreen,
-  TemperatureBox,
-  // nextScreenToggle,
-  intExtTemp,
-  generalLighting,
+export const GeneralLighting = () => {
+  return (
+    <Card title="Light Control" align="left">
+      <Space direction="vertical" align="left">
+        <h> Overhead Living Room Light </h>
+        <ApplianceToggle></ApplianceToggle>
+        <h> Overhead Kitchen Light </h>
+        <ApplianceToggle></ApplianceToggle>
+      </Space>
+    </Card>
+  );
 };
