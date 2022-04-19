@@ -1,43 +1,53 @@
 import React from "react";
 import { Card } from "antd";
-import { Grid } from "antd";
-import { Row, Col } from "antd";
+import { Space } from "antd";
+import { UpOutlined, DownOutlined } from "@ant-design/icons";
 
-// import Floorplan from "./Floorplan"; // include the floorplan
-// import Thermostat from "./Thermostat"; // include the thermostat
-
-// Probably remove Grid, contextualize to just rely on divisor placement.
-const gridLayout = () => {
-  return (
-    <Row>
-      <Col span={24}> </Col>
-      <Col span={12}>col-12</Col>
-      <Col span={8}>col-8</Col>
-    </Row>
-  );
-};
-
-const HomeScreen = () => {
+export const HomeScreen = () => {
   return <img src={require("../imgs/FloorPlan.jpg")} alt=""></img>;
 };
 
-const TemperatureBox = () => {
-  return <Card title="Temperature Control"></Card>;
+// const tabList = [ {
+//   key: 'tab1',
+//   tab: 'tab1',
+// },
+
+// {
+//   key: 'tab2',
+//   tab: 'tab2',
+// }
+
+//put these in ghost buttons
+export const TemperatureBox = () => {
+  return (
+    <Card title="Temperature Control">
+      <UpOutlined style={{ fontSize: "44px" }} />
+      <DownOutlined style={{ fontSize: "44px" }} />
+      <p style={{ fontSize: "34px" }}>76°</p>
+    </Card>
+  );
 };
 
-const intExtTemp = () => {
-  return <Card title="Real Time temperature">test</Card>;
+export const IntExtTemp = () => {
+  return (
+    <Card title="Real-time Temperature">
+      {/* <h align="top"> YES </h> */}
+      <Space direction="vertical">
+        <p style={{ fontSize: "20px" }} align="center">
+          Internal: <p style={{ fontSize: "25px" }}> 76° </p>
+        </p>
+        <p style={{ fontSize: "20px" }} align="center">
+          External: <p style={{ fontSize: "25px" }}> 85° </p>
+        </p>
+      </Space>
+    </Card>
+  );
 };
 
-const generalLighting = () => {
-  return <Card title="Light Control">test</Card>;
-};
-
-export {
-  gridLayout,
-  HomeScreen,
-  TemperatureBox,
-  // nextScreenToggle,
-  intExtTemp,
-  generalLighting,
+export const GeneralLighting = () => {
+  return (
+    <Card title="Light Control">
+      <p>Test</p>
+    </Card>
+  );
 };
