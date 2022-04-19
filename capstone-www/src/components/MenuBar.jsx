@@ -6,58 +6,48 @@ import {
   SlidersOutlined, // Control screen Icon
 } from "@ant-design/icons";
 import { Space } from "antd";
+import { Divider } from "antd";
 
 // Local
-import {
-  HomeScreen,
-  TemperatureBox,
-  IntExtTemp,
-  GeneralLighting,
-} from "./HomeScreen";
+import { HomeScreen, TemperatureBox } from "./HomeScreen";
 import { AnalysisScreen } from "./AnalysisScreen";
 import { ControlScreen } from "./ControlScreen";
 
-// Creates TabPanes for modules/screens
 const { TabPane } = Tabs;
 
 function callback(key) {
   console.log(key);
 }
 
-// Main Menu bar function
 const MenuBar = () => (
   <Tabs
     defaultActiveKey="1"
     onChange={callback}
     centered
-    size="large"
-    style={{ marginBottom: 16 }}
+    style={{ marginBottom: 32 }}
   >
     <TabPane
       tab={
-        <span>
-          <HomeOutlined style={{ fontSize: "30px" }} />
-          <h style={{ fontSize: "20px" }}> Home Screen </h>
-        </span>
+        <div>
+          <HomeOutlined /> Home Screen
+        </div>
       }
       key="1"
     >
       {" "}
-      <Space direction="horizontal">
-        <HomeScreen />
-        <Space direction="vertical">
-          <TemperatureBox />
-          <IntExtTemp />
-          <GeneralLighting />
-        </Space>
-      </Space>
+      <HomeScreen />
+      <gridLayout>
+        <Divider orientation="vertical">
+          {" "}
+          <TemperatureBox></TemperatureBox>
+        </Divider>{" "}
+      </gridLayout>
     </TabPane>
     <TabPane
       tab={
-        <span>
-          <LineChartOutlined style={{ fontSize: "30px" }} />{" "}
-          <h style={{ fontSize: "20px" }}> Usage History </h>
-        </span>
+        <div>
+          <LineChartOutlined /> Usage History
+        </div>
       }
       key="2"
     >
@@ -65,10 +55,9 @@ const MenuBar = () => (
     </TabPane>
     <TabPane
       tab={
-        <span>
-          <SlidersOutlined style={{ fontSize: "30px" }} />{" "}
-          <h style={{ fontSize: "20px" }}> Control Panel </h>
-        </span>
+        <div>
+          <SlidersOutlined /> Control Panel
+        </div>
       }
       key="3"
     >

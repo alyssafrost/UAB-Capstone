@@ -1,6 +1,7 @@
 // https://codesandbox.io/s/kec3v?file=/src/App.tsx
 
 // TODO:Populate with real data
+// TODO: Also use a calendar component? Not sure.
 
 import React from "react";
 
@@ -67,18 +68,9 @@ const AnalysisScreen = () => {
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
-      <YAxis datakey="Test" />
-      <Tooltip wrapperStyle={{ width: 100, backgroundColor: "white" }} />
-      <Legend
-        wrapperStyle={{
-          top: 40,
-          right: 20,
-          backgroundColor: "#f5f5f5",
-          border: "1px solid #d5d5d5",
-          borderRadius: 3,
-          lineHeight: "40px",
-        }}
-      />
+      <YAxis />
+      <Tooltip />
+      <Legend />
       <Line
         type="monotone"
         dataKey="water_usage"
