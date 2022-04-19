@@ -52,10 +52,11 @@ export const IntExtTemp = () => {
 
 export const GeneralLighting = () => {
   return (
-    <Card title="Light Control">
+    <Card title="Light Control" align="left">
       <Space direction="vertical" align="left">
+        <h> Overhead Living Room Light </h>
         <Switch></Switch>
-        <Switch></Switch>
+        <h> Overhead Kitchen Light </h>
         <Switch></Switch>
       </Space>
     </Card>
