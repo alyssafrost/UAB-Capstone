@@ -1,6 +1,7 @@
 import { Layout, Space } from "antd";
 import { Switch } from "antd";
-import { Row } from "antd";
+import { Card } from "antd";
+import { CloseOutlined, CheckOutlined } from "@ant-design/icons";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -14,42 +15,80 @@ const ApplianceToggle = () => {
   return (
     <Switch defaultChecked onChange={onChange} size="Large">
       <br />
-      <Switch defaultChecked />
+      <Switch
+        checkedChildren={<CheckOutlined />}
+        unCheckedChildren={<CloseOutlined />}
+        defaultChecked
+      />
     </Switch>
   );
 };
 
-// fix tiny later // use Space to define the sizes between switches, or Grid, or Divider
 const ControlScreen = () => {
   return (
     <Layout>
-      <Sider>
-        <ApplianceToggle>"1"</ApplianceToggle>
-        <Space>
-          <ApplianceToggle>"2"</ApplianceToggle>
-        </Space>
-        <Space>
-          <ApplianceToggle>{"Test"}</ApplianceToggle>
-          <Space>
-            <ApplianceToggle>{"Test"}</ApplianceToggle>
-          </Space>
-        </Space>
-      </Sider>
+      {" "}
       {"Switch Toggles"}
-      <Header>{"Header"}</Header>
-      <Content>
-        <ApplianceToggle>"1"</ApplianceToggle>
+      <Card title="Kitchen Appliances" align="horizontal">
         <Space>
-          <ApplianceToggle>"2"</ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
         </Space>
+      </Card>
+      <Card title="Main Bedroom Appliances" align="horizontal">
         <Space>
-          <ApplianceToggle>{"Test"}</ApplianceToggle>
-          <Space>
-            <ApplianceToggle>{"Test"}</ApplianceToggle>
-          </Space>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
         </Space>
-      </Content>
-      <Footer>Here is the footer container</Footer>
+      </Card>
+      <Card title="Main Bathroom" align="horizontal">
+        <Space>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+        </Space>
+      </Card>
+      <Card title="Living Room Appliances" align="horizontal">
+        <Space>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+        </Space>
+      </Card>
+      <Card title="Kids Bedroom Appliances" align="horizontal">
+        <Space>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+        </Space>
+      </Card>
+      <Card title="Kids Bathroom" align="horizontal">
+        <Space>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+          <ApplianceToggle></ApplianceToggle>
+        </Space>
+      </Card>
     </Layout>
   );
 };
