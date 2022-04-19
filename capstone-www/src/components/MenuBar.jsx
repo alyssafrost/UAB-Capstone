@@ -6,10 +6,14 @@ import {
   SlidersOutlined, // Control screen Icon
 } from "@ant-design/icons";
 import { Space } from "antd";
-import { Divider } from "antd";
 
 // Local
-import { HomeScreen, TemperatureBox } from "./HomeScreen";
+import {
+  HomeScreen,
+  TemperatureBox,
+  IntExtTemp,
+  GeneralLighting,
+} from "./HomeScreen";
 import { AnalysisScreen } from "./AnalysisScreen";
 import { ControlScreen } from "./ControlScreen";
 
@@ -28,26 +32,27 @@ const MenuBar = () => (
   >
     <TabPane
       tab={
-        <div>
+        <span>
           <HomeOutlined /> Home Screen
-        </div>
+        </span>
       }
       key="1"
     >
       {" "}
-      <HomeScreen />
-      <gridLayout>
-        <Divider orientation="vertical">
-          {" "}
-          <TemperatureBox></TemperatureBox>
-        </Divider>{" "}
-      </gridLayout>
+      <Space direction="horizontal">
+        <HomeScreen />
+        <Space direction="vertical">
+          <TemperatureBox />
+          <IntExtTemp />
+          <GeneralLighting />
+        </Space>
+      </Space>
     </TabPane>
     <TabPane
       tab={
-        <div>
+        <span>
           <LineChartOutlined /> Usage History
-        </div>
+        </span>
       }
       key="2"
     >
@@ -55,9 +60,9 @@ const MenuBar = () => (
     </TabPane>
     <TabPane
       tab={
-        <div>
+        <span>
           <SlidersOutlined /> Control Panel
-        </div>
+        </span>
       }
       key="3"
     >
