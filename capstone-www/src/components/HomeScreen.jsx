@@ -3,10 +3,11 @@ import React from "react";
 import { Card } from "antd";
 import { Space } from "antd";
 import { UpOutlined, DownOutlined } from "@ant-design/icons";
-import { Switch } from "antd";
 import { Button } from "antd";
 
+//Local
 import "../antd.css";
+import { ApplianceToggle } from "./ControlScreen";
 
 // Local exports
 export const HomeScreen = () => {
@@ -55,9 +56,9 @@ export const GeneralLighting = () => {
     <Card title="Light Control" align="left">
       <Space direction="vertical" align="left">
         <h> Overhead Living Room Light </h>
-        <Switch></Switch>
+        <ApplianceToggle></ApplianceToggle>
         <h> Overhead Kitchen Light </h>
-        <Switch></Switch>
+        <ApplianceToggle></ApplianceToggle>
       </Space>
     </Card>
   );
