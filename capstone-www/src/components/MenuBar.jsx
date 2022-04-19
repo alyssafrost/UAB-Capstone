@@ -28,7 +28,8 @@ const MenuBar = () => (
     defaultActiveKey="1"
     onChange={callback}
     centered
-    style={{ marginBottom: 32 }}
+    size="large"
+    style={{ marginBottom: 16 }}
   >
     <TabPane
       tab={
