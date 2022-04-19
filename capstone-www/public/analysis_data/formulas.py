@@ -98,6 +98,8 @@ def doorEnergy(internal):
 
     return cost
 
+print(doorEnergy(63))
+
 def windowEnergy(internal):
     '''
     Calculates cost for every 30 seconds a window is open
