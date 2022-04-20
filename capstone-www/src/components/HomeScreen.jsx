@@ -2,12 +2,11 @@
 import React from "react";
 import { Card } from "antd";
 import { Space } from "antd";
-import { UpOutlined, DownOutlined } from "@ant-design/icons";
-import { Button } from "antd";
 
 //Local
 import "../antd.css";
 import { ApplianceToggle } from "./ControlScreen";
+import { Thermostat } from "./Thermostat";
 
 // Local exports
 export const HomeScreen = () => {
@@ -16,24 +15,7 @@ export const HomeScreen = () => {
 
 // create onClick for temperature state
 export const TemperatureBox = () => {
-  return (
-    <Card title="Temperature Control">
-      <span className="site-button-ghost-wrapper-up" align="left">
-        <Button type="primary" ghost size="large">
-          <UpOutlined style={{ fontSize: "34px" }} align="left" />
-        </Button>
-      </span>
-      <Space>
-        <Space></Space>
-        <span className="site-button-ghost-wrapper-down" align="right">
-          <Button type="primary" ghost size="large">
-            <DownOutlined style={{ fontSize: "34px" }} align="right" />
-          </Button>
-        </span>
-      </Space>
-      <p style={{ fontSize: "34px" }}> 76° </p>
-    </Card>
-  );
+  return <Thermostat></Thermostat>;
 };
 
 export const IntExtTemp = () => {
