@@ -3,13 +3,9 @@ import { Switch } from "antd";
 import { Card } from "antd";
 import { CloseOutlined, CheckOutlined } from "@ant-design/icons";
 
-const { Header, Footer, Sider, Content } = Layout;
-
 function onChange(checked) {
   console.log(`switch to ${checked}`);
 }
-
-// Set a default type to use for onchangeh
 
 const ApplianceToggle = () => {
   return (
