@@ -1,0 +1,21 @@
+@import "~antd/dist/antd.css";
+
+.ant-menu {
+  background: none !important;
+}
+
+.site-button-ghost-wrapper-up {
+    padding: auto;
+    padding-bottom: auto;
+    width: auto;
+    height: auto;
+    object-fit: auto;
+}
+
+.site-button-ghost-wrapper-down {
+    padding: auto;
+    padding-bottom: auto;
+    width: auto;
+    height: auto;
+    object-fit: auto;
+}
