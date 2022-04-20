@@ -1,23 +1,29 @@
+// React, antd
 import React, { useState } from "react";
 import { Button } from "antd";
 import { Space } from "antd";
 import { UpOutlined, DownOutlined } from "@ant-design/icons";
 import { Card } from "antd";
+
+// Local
 import "../thermostat.css";
 
 export const Thermostat = () => {
   const [tempValue, setTempValue] = useState(76);
 
+  // Increase the temperature on the HomeScreen.
   const increaseTemp = () => {
     const newTemp = tempValue + 1;
     setTempValue(newTemp);
   };
 
+  // Decrease the temperature on the HomeScreen.
   const decreaseTemp = () => {
     const newTemp = tempValue - 1;
     setTempValue(newTemp);
   };
 
+  // Return the actual Thermostat functionality, and buttons.
   return (
     <Card title="Temperature Control">
       <div className="button-container">
