@@ -64,6 +64,8 @@ Below are the tables of data that correspond to each event, day, time, or amount
 ## Utility Usage and Temperature Calculation
 ----
 
+ Cam's Minor was math, so he put together the temperature formulas as such: 
+
  Math formulas for our temperature conversions.
  Heat loss for closed doors/windows: Q = U*A*deltaT
  Advised U-value for windows in AL = 0.30
@@ -138,4 +140,4 @@ def doorEnergy(internal):
 
 Cory's psycology major inspired him to create a stand up reminder for the sake of one's mental exhaustion. It looks like so over the home screen after 30 consecutive seconds have passed:
 
-
+[Click here to be redirected to that image.](https://gitlab.com/alyssafrost/cs-499/-/blob/working/capstone-www/src/imgs/corys.jpg)
