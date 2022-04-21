@@ -21,6 +21,7 @@ const data = [
     electricity_usage: 2400,
     total_cost: 1500,
     amt: 2400,
+    color: "#0000",
   },
   {
     name: "Month 2",
@@ -32,7 +33,7 @@ const data = [
   {
     name: "Month 3",
     water_usage: 2000,
-    electricity_usage: 9800,
+    electricity_usage: 5800,
     total_cost: 1300,
     amt: 2290,
   },
@@ -65,10 +66,10 @@ const AnalysisScreen = () => {
         bottom: 2,
       }}
     >
-      <CartesianGrid strokeDasharray="3 3" />
+      <CartesianGrid strokeDasharray="5 5" color="black" />
       <XAxis dataKey="name" />
       <YAxis datakey="Test" />
-      <Tooltip wrapperStyle={{ width: 100, backgroundColor: "white" }} />
+      <Tooltip />
       <Legend
         wrapperStyle={{
           top: 40,
