@@ -13,11 +13,12 @@ export const HomeScreen = () => {
   return <img src={require("../imgs/FloorPlan.jpg")} alt=""></img>;
 };
 
-// create onClick for temperature state
+// Holds Thermostat and is the control box
 export const TemperatureBox = () => {
   return <Thermostat></Thermostat>;
 };
 
+// Creates interior and exterior box
 export const IntExtTemp = () => {
   return (
     <Card title="Real-time Temperature">
@@ -33,6 +34,7 @@ export const IntExtTemp = () => {
   );
 };
 
+// Creates card with two most used lighting toggles for ease of access
 export const GeneralLighting = () => {
   return (
     <Card title="Light Control" align="left">

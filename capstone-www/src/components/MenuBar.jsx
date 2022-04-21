@@ -24,7 +24,7 @@ function callback(key) {
   console.log(key);
 }
 
-// Main Menu bar function
+// Main Menu bar function, holds all three tab screens
 const MenuBar = () => (
   <Tabs
     defaultActiveKey="1"

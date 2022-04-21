@@ -1,12 +1,15 @@
+// React, antd
 import { Layout, Space } from "antd";
 import { Switch } from "antd";
 import { Card } from "antd";
 import { CloseOutlined, CheckOutlined } from "@ant-design/icons";
 
+// Creates onChange function for checked state
 function onChange(checked) {
   console.log(`switch to ${checked}`);
 }
 
+// Hosts all of the onChange functionality for the switches
 const ApplianceToggle = () => {
   return (
     <Switch defaultChecked onChange={onChange} size="Large">
@@ -20,6 +23,7 @@ const ApplianceToggle = () => {
   );
 };
 
+// Hosts all of the appliance and sensor swtiches per room card
 const ControlScreen = () => {
   return (
     <Layout>
@@ -147,5 +151,4 @@ const ControlScreen = () => {
   );
 };
 
-export { ControlScreen };
-export { ApplianceToggle };
+export { ApplianceToggle, ControlScreen };
