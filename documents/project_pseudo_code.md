@@ -1,8 +1,8 @@
 # Project Pseudocode
 
 1. Family Data & Usage Time Schedule
-2. Event Generation Based on Time Schedule
-3. Utility Usage and Temperature Calculation
+2. Utility Usage and Temperature Calculation
+3. Reminder to Stand for health
 
 ## Family Data & Usage Time Schedule
 
@@ -56,9 +56,6 @@ Below are the tables of data that correspond to each event, day, time, or amount
 | Showers (3 per day)                         | Sat-Sun | Any  |
 | Baths (3 per day)                           | Sat-Sun | Any  |
 | Stove (30 min a day)                        | Sat-Sun | Any  |
-
-## Event Generation Based on Time Schedule
----
 
 
 ## Utility Usage and Temperature Calculation
